@@ -171,11 +171,11 @@ format:
 
 | Agent | Model | Purpose |
 |-------|-------|---------|
-| Social Sentiment | Fast (Mixtral 8x7B) | Cheap, fast research |
-| Macro | Fast (Mixtral 8x7B) | Cheap, fast research |
-| Crypto Industry | Fast (Mixtral 8x7B) | Cheap, fast research |
-| Master Quant | Heavy (Theta 70B) | Critical decision-making |
+| Social Sentiment | Fast (Hermes-4.3-36B) | Cheap, fast research |
+| Macro | Fast (Hermes-4.3-36B) | Cheap, fast research |
+| Crypto Industry | Fast (Hermes-4.3-36B) | Cheap, fast research |
+| Master Quant | Heavy (Hermes-4-405B) | Critical decision-making |
 
-Research agents use lower-cost models because they do bulk web search
-processing. The Master Quant uses the heavier model for nuanced
+Research agents use the smaller 36B model because they do bulk web search
+processing. The Master Quant uses the 405B frontier model for nuanced
 decision-making that considers all qualitative reports + quantitative data.

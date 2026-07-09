@@ -15,14 +15,14 @@ load_dotenv()
 # Nous Research / Hermes API (OpenAI-compatible, routed via litellm)
 NOUS_API_KEY = os.getenv("NOUS_API_KEY", "")
 NOUS_API_BASE = os.getenv(
-    "NOUS_API_BASE", "https://inference.nousresearch.com/v1"
+    "NOUS_API_BASE", "https://inference-api.nousresearch.com/v1"
 )
 
 # Fast model for research agents (sentiment, macro, crypto industry)
-FAST_MODEL = os.getenv("FAST_MODEL", "Nous-Hermes-2-Mixtral-8x7B-DPO")
+FAST_MODEL = os.getenv("FAST_MODEL", "Hermes-4.3-36B")
 
 # Heavy model for the Master Quant Agent (decision-making & execution)
-HEAVY_MODEL = os.getenv("HEAVY_MODEL", "Nous-Hermes-2-Theta-Llama-3-70B")
+HEAVY_MODEL = os.getenv("HEAVY_MODEL", "Hermes-4-405B")
 
 # Tavily API key for AI-optimized web search (used by research agents)
 TAVILY_API_KEY = os.getenv("TAVILY_API_KEY", "")
