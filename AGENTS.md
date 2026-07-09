@@ -167,15 +167,13 @@ Open http://localhost:8050 in your browser.
 ## LLM Routing
 
 All agents use **Nous Research / Hermes API** via `litellm` with OpenAI-compatible
-format:
+format. All 4 agents run on **Hermes-4-405B** — the frontier 405B model
+with 128k context, providing top-tier reasoning for both research analysis
+and critical trading decisions.
 
 | Agent | Model | Purpose |
 |-------|-------|---------|
-| Social Sentiment | Fast (Hermes-4.3-36B) | Cheap, fast research |
-| Macro | Fast (Hermes-4.3-36B) | Cheap, fast research |
-| Crypto Industry | Fast (Hermes-4.3-36B) | Cheap, fast research |
-| Master Quant | Heavy (Hermes-4-405B) | Critical decision-making |
-
-Research agents use the smaller 36B model because they do bulk web search
-processing. The Master Quant uses the 405B frontier model for nuanced
-decision-making that considers all qualitative reports + quantitative data.
+| Social Sentiment | Hermes-4-405B | Retail sentiment analysis |
+| Macro | Hermes-4-405B | Geopolitical & macro research |
+| Crypto Industry | Hermes-4-405B | Industry & platform monitoring |
+| Master Quant | Hermes-4-405B | Final decision & execution |

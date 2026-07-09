@@ -19,7 +19,7 @@ NOUS_API_BASE = os.getenv(
 )
 
 # Fast model for research agents (sentiment, macro, crypto industry)
-FAST_MODEL = os.getenv("FAST_MODEL", "Hermes-4.3-36B")
+FAST_MODEL = os.getenv("FAST_MODEL", "Hermes-4-405B")
 
 # Heavy model for the Master Quant Agent (decision-making & execution)
 HEAVY_MODEL = os.getenv("HEAVY_MODEL", "Hermes-4-405B")
