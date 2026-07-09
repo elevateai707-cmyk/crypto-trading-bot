@@ -167,13 +167,13 @@ Open http://localhost:8050 in your browser.
 ## LLM Routing
 
 All agents use **Nous Research / Hermes API** via `litellm` with OpenAI-compatible
-format. All 4 agents run on **Hermes-4-405B** — the frontier 405B model
-with 128k context, providing top-tier reasoning for both research analysis
-and critical trading decisions.
+format. The 3 research agents run on **DeepSeek V4 Flash** (cost-efficient,
+fast research). The Master Quant orchestrator runs on **Hermes-4-405B**
+(frontier reasoning for critical trade decisions).
 
 | Agent | Model | Purpose |
 |-------|-------|---------|
-| Social Sentiment | Hermes-4-405B | Retail sentiment analysis |
-| Macro | Hermes-4-405B | Geopolitical & macro research |
-| Crypto Industry | Hermes-4-405B | Industry & platform monitoring |
-| Master Quant | Hermes-4-405B | Final decision & execution |
+| Social Sentiment | DeepSeek V4 Flash | Cost-efficient retail sentiment analysis |
+| Macro | DeepSeek V4 Flash | Cost-efficient macro & geopolitical research |
+| Crypto Industry | DeepSeek V4 Flash | Cost-efficient industry monitoring |
+| Master Quant | **Hermes-4-405B** | Final decision, execution & veto logic |
