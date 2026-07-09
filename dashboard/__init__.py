@@ -1,0 +1,1 @@
+"""Dashboard package — Dash-based real-time trading terminal."""

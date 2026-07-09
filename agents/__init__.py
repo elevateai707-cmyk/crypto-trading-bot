@@ -1,0 +1,1 @@
+"""Agents package — CrewAI-powered autonomous research agents."""
